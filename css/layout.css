@@ -1,0 +1,85 @@
+:root {
+    --less-padding: 0.5rem;
+    --main-padding: 1rem;
+    --main-radius: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr) 0.25fr;
+    grid-template-rows: .2fr 2fr 1fr 1fr .4fr .3fr;
+    grid-template-areas: 
+        "nav nav nav"
+        "hero hero hero"
+        "testimonals testimonals ads"
+        "services services ads"
+        "freelance freelance ads"
+        "footer footer footer";
+    grid-gap: 0.25rem;
+}
+
+.nav {
+    background-color: yellow;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--less-padding);
+    border-radius: var(--main-radius);
+}
+
+.hero {
+    background-color: rebeccapurple;
+    grid-area: hero;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonals {
+    background-color: teal;
+    grid-area: testimonals;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+}
+
+.services {
+    background-color: blueviolet;
+    grid-area: services;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+}
+
+.freelance {
+    background-color: violet;
+    grid-area: freelance;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+}
+
+.ads {
+    background-color: royalblue;
+    grid-area: ads;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+    background-image: url('../img/ads.jpg');
+}
+
+.footer {
+    background-color: gold;
+    grid-area: footer;
+    padding: var(--main-padding);
+    border-radius: var(--main-radius);
+}
