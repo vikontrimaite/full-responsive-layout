@@ -261,8 +261,8 @@ textarea {
 }
 
 @media (min-width: 593px) {
-    html {
+    /* html {
         font-size: 0.7rem;
-    }
+    } */
 
 }
