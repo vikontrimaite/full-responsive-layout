@@ -5,50 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive layout with CSS grid</title>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
 <body>
     <div class="grid-wrapper">
-        <div class="nav">
-            <img src="./img/logo.jpg" alt="Logo" class="logo">
+        <header class="nav">
+            <img src="./img/logo.png" alt="Logo" class="logo">
             <nav class="menu">
-                <a href="#">Home</a>
+                <a href="#">Testimonals</a>
                 <a href="#">About</a>
+                <a href="#">Services</a>
                 <a href="#">Contact</a>
             </nav>
-            <div>
-                socials
+            <div class="socials">
+                <a 
+               href="#" class="fa fa-facebook"></a> 
+               <a 
+               href="#" class="fa fa-twitter"></a>
+               <a 
+               href="#" class="fa fa-instagram"></a>
+               <a 
+               href="#" class="fa fa-tumblr"></a>
+               <a 
+               href="#" class="fa fa-linkedin"></a>
+               <a 
+               href="#" class="fa fa-bug"></a>
+            </div>
+        </header>
+
+        <div class="hero"></div>
+
+        <div class="testimonals flexbox-main">
+            <div class="testimonal-item flexbox-item">
+                <img src="./img/review1.jpg" alt="Testimonal 1" class="testimonal-img">
+                <p class="testimonal-parag">"Now it’s almost like having a designer right here with me. I just choose the page, make the change and click save. It’s so simple."</p>
+                <h1 class="testimonal-h1">Nicole</h1>
+            </div>
+
+            <div class="testimonal-item flexbox-item">
+                <img src="./img/review3.jpg" alt="Testimonal 1" class="testimonal-img">
+                <p class="testimonal-parag">"My new site is so much faster and easier to work with than my old site. It used to take me an hour or more to update a page and I would still sometimes screw things."</p>
+                <h1 class="testimonal-h1">Dave</h1>
+            </div>
+
+            <div class="testimonal-item3 flexbox-item">
+                <img src="./img/review2.jpg" alt="Testimonal 2" class="testimonal-img">
+                <p class="testimonal-parag">"Great how easy your websites are to update and manage. I never have any problem at all. I never have any problem at all."</p>
+                <h1 class="testimonal-h1">Kate</h1>
             </div>
         </div>
 
-        <div class="hero">
-            Hero
-        </div>
+        <div class="about">
+            <h1 class="fancy-text">About us</h1>
+            <img src="./img/about.jpg" alt="Our team" class="about-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dicta doloribus mollitia eius ut iure iste deleniti molestiae laudantium illo dignissimos esse ea laboriosam quasi, provident numquam placeat earum animi.
+            Ut, in non deleniti eveniet perspiciatis nihil ea dolores magni doloremque quos est ratione, perferendis debitis omnis cupiditate quis vero fugit. Dolorem accusamus ducimus quas obcaecati. Ipsa esse reprehenderit molestiae?
+            Facere exercitationem, nulla rerum voluptas optio, asperiores modi ducimus, soluta cum praesentium numquam deserunt rem libero iste! Maiores ex eum accusamus deleniti porro quam dolore laboriosam sit aspernatur, labore quia!
+            Minus quo est numquam dolores in provident obcaecati necessitatibus cupiditate illo nemo, cumque eum. Esse, veniam aliquid, laboriosam doloremque, iure expedita nemo at ad ipsam dolore possimus rem mollitia est?
+            Aspernatur dolorum perferendis enim incidunt itaque illo temporibus odit, nihil culpa alias error, aperiam facere nostrum distinctio ipsa ratione est maiores voluptatibus asperiores molestias doloribus! Quam autem voluptates blanditiis perferendis?</p>
 
-        <div class="testimonals">
-            <h1>Testimonals</h1>
-            <p class="testimonal1">Testimonal1 Lorem, ipsum dolor sit amet consectetur adipisicing exercitationem cumque beatae tempore est. In, repellat.</p>
-            <p class="testimonal2">Testimonal2 Lorem ipsum dolor, sit amet consectetur adipisicing sit. Asperiores laudantium fugiat architecto quos eveniet minus.</p>
+            
         </div>
 
         <div class="services">
-            <h1>Services</h1>
-            <div class="service1">Service1</div>
-            <div class="service2">Service2</div>
-            <div class="service3">Service3</div>
+            <h1 class="fancy-text">What we do?</h1>
+
+                <div class="flexbox-main">  
+
+                    
+                        <div class="service-item flexbox-item">
+                            <img src="./img/service1.png" alt="Service 1" class="service-img">
+                            <h1 class="service-h1">Communication</h1>
+                            <p class="service-parag">Lorem ipsum dolor sit, amet consecteg elunt laborum obcaecati ipsam?</p>
+                        </div>
+                    
+
+                    
+                        <div class="service-item flexbox-item">
+                            <img src="./img/service2.png" alt="Service 2" class="service-img">
+                            <h1 class="service-h1">Partnership</h1>
+                            <p class="service-parag">Lorem ipsum doe eveniet at molestias itaque sit? Magni fugit quo atque.</p>
+                        </div>
+                    
+
+                    
+                        <div class="service-item flexbox-item">
+                            <img src="./img/service3.png" alt="Service 3" class="service-img">
+                            <h1 class="service-h1">Thinking</h1>
+                            <p class="service-parag">Lorem, ipsum dolor sit amet sum quis voluptet sum quis voluptate, dignissimos rem.</p>
+                       
+                    </div>
+            </div>
+            
         </div>
 
-        <div class="freelance">
-            Freelance
+        <div class="contact">
+            <h1 class="fancy-text">Contact us</h1>
+
+            <div class="contact-box">
+
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Pablo" required>
+                
+            </div>
+            
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="pablo@email.com" required>
+                
+            </div>
+
+            <div class="form-item">
+                <label for="message">Message</label>
+                <textarea maxlength="1000" placeholder="Type your message here" data-validation="text"></textarea>
+            </div>
+
+            <div class="form-item">
+               <div class="submit">Submit</div>
+            </div>
+
+            </div>
         </div>
 
-        <div class="ads">
-            Ads
-        </div>
+        <div class="ads"></div>
 
         <footer class="footer">
-            Footer
+            Footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur ex velit vitae! Sequi temporibus nulla consequatur, maxime laboriosam cumque corporis quae rem tenetur cum dolorum expedita sint delectus repudiandae?
         </footer>
     </div>
 </body>
